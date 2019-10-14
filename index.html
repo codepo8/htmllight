@@ -1,0 +1,305 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+	<title>HTMLlight</title>
+<SCRIPT LANGUAGE="JavaScript" TYPE="text/javascript" src="tools.js"></SCRIPT>
+<LINK REL="StyleSheet" HREF="colorize.css" type="text/css">
+</head>
+<body bgcolor="#ffffff" text="#000000" link="#000000" vlink="#000000">
+<!-- Maintable, contains the menu and the space for the textfield -->
+<table width=1 border=0 cellpadding=0 cellspacing=0>
+<tr>
+<td width=1 bgcolor="#666666"><img src="dot_clear.gif" width="1" height="1" alt="" border="0"></td>
+<td width=10 bgcolor="#666666"><img src="dot_clear.gif" width="10" height="1" alt="" border="0"></td>
+<td width=560 bgcolor="#666666"><img src="dot_clear.gif" width="560" height="1" alt="" border="0"></td>
+<td width=10 bgcolor="#666666"><img src="dot_clear.gif" width="10" height="1" alt="" border="0"></td>
+<td width=1 bgcolor="#666666"><img src="dot_clear.gif" width="1" height="1" alt="" border="0"></td>
+</tr>
+<tr>
+<td bgcolor="#666666"><img src="dot_clear.gif" width="1" height="20" alt="" border="0"></td>
+<td bgcolor="#666699"><img src="dot_clear.gif" width="1" height="1" alt="" border="0"></td>
+<td bgcolor="#666699" valign="top" align="center"><font face="verdana,helvetica,arial" size=-1 color="#ffffff"><b>HTMLlight v1.0</b></font></td>
+<td bgcolor="#666699"><img src="dot_clear.gif" width="1" height="1" alt="" border="0"></td>
+<td bgcolor="#666666"><img src="dot_clear.gif" width="1" height="1" alt="" border="0"></td>
+</tr>
+<tr>
+<td bgcolor="#666666"><img src="dot_clear.gif" width="1" height="1" alt="" border="0"></td>
+<td bgcolor="#ccccff"><img src="dot_clear.gif" width="1" height="1" alt="" border="0"></td>
+<td bgcolor="#ccccff" valign="top" align="right"><font face="verdana,helvetica,arial" size=-2>
+Help? <a href="javascript:domlay('help',1);showhelp('')">on</a>&nbsp;<a href="javascript:domlay('help',0)">off</a>
+</font></td>
+<td bgcolor="#ccccff"><img src="dot_clear.gif" width="1" height="1" alt="" border="0"></td>
+<td bgcolor="#666666"><img src="dot_clear.gif" width="1" height="1" alt="" border="0"></td>
+</tr>
+
+<tr>
+<td bgcolor="#666666"><img src="dot_clear.gif" width="1" height="1" alt="" border="0"></td>
+<td bgcolor="#ccccff"><img src="dot_clear.gif" width="1" height="1" alt="" border="0"></td>
+<td bgcolor="#ccccff" valign="top" align="center"><font face="verdana,helvetica,arial" size=-1>
+<!-- Menu start -->
+<a href="javascript:edit('bolded')" onmouseover="showhelp('<b>Add bold text</b>: Allows you to enter a text that will later on be displayed <b>bold</b>.')" onmouseout="showhelp('&nbsp;');"><img src="bold.gif" width="25" height="25" hspace=2 vspace=5 alt="Add bold text" border="0"></a>
+<a href="javascript:edit('italiced')" onmouseover="showhelp('<b>Add italic text</b>: Allows you to enter a text that will later on be displayed <i>italic</i>.')" onmouseout="showhelp('&nbsp;');"><img src="italic.gif" width="25" height="25" hspace=2 vspace=5 alt="Add italic text" border="0"></a>
+<a href="javascript:edit('fonted')" onmouseover="showhelp('<b>Define font</b>: Allows you define the font/typeface of your text, make sure to use the close font command after your text.')" onmouseout="showhelp('&nbsp;');"><img src="definefont.gif" width="25" height="25" hspace=2 vspace=5 alt="Define font" border="0"></a>
+<a href="javascript:addstring('</font>')" onmouseover="showhelp('<b>Close font</b>: Inserts the closing tag for a previously defined font setting. Always use this when you defined a font.')" onmouseout="showhelp('&nbsp;');"><img src="closefont.gif" width="25" height="25" hspace=2 vspace=5 alt="Close font" border="0"></a>
+<a href="javascript:addstring('<br>')" onmouseover="showhelp('<b>Add linebreak</b>: Inserts an HTML linebreak.')" onmouseout="showhelp('&nbsp;');"><img src="linebreak.gif" width="25" height="25" hspace=2 vspace=5 alt="Add a linebreak" border="0"></a>
+<a href="javascript:edit('linked')" onmouseover="showhelp('<b>Add link</b>: Allows you to insert a link in the text, you specify the url where it jumps to and the displayed text.')" onmouseout="showhelp('&nbsp;');"><img src="link.gif" width="25" height="25" hspace=2 vspace=5 alt="Add a link" border="0"></a>
+<a href="javascript:edit('saveed')" onmouseover="showhelp('<b>Save/Load</b>: Allows you to use one of 5 &quot;disks&quot; to save your text to or load a previously saved stage from.')" onmouseout="showhelp('&nbsp;');"><img src="loadsave.gif" width="25" height="25" hspace=2 vspace=5 alt="Load / Save a workstage" border="0"></a>
+<a href="javascript:oops()" onmouseover="showhelp('<b>Undo</b>: This button deletes the last operation you did, if you made an error, simply click this one.')" onmouseout="showhelp('&nbsp;');"><img src="undo.gif" width="25" height="25" hspace=2 vspace=5 alt="Undo last move" border="0"></a>
+<a href="javascript:preview()" onmouseover="showhelp('<b>Preview</b>: Displays the text on a white canvas the same way a browser displays it.')" onmouseout="showhelp('&nbsp;');"><img src="preview.gif" width="25" height="25" hspace=2 vspace=5 alt="Preview the text" border="0"></a>
+<!-- Menu end -->
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</font></td>
+<td bgcolor="#ccccff"><img src="dot_clear.gif" width="1" height="1" alt="" border="0"></td>
+<td bgcolor="#666666"><img src="dot_clear.gif" width="1" height="1" alt="" border="0"></td>
+</tr>
+<tr>
+<td colspan=5><img src="bigcorner.gif" width="582" height="10" alt="bottom" border="0"></td>
+</tr>
+</table>
+<!-- Maintable end -->
+
+<!-- The main entry form, the code textarea and the five safety slots -->
+<div id="formin" align="center">
+<form name="mainform">
+<br><div align="center"><font face="verdana,helvetica,arial" size=-1><b>Your text:</b></font></div>
+<textarea name="code" wrap="virtual" cols=60 rows=10></textarea>
+<input type="hidden" name="save1" size=10>
+<input type="hidden" name="save2" size=10>
+<input type="hidden" name="save3" size=10>
+<input type="hidden" name="save4" size=10>
+<input type="hidden" name="save5" size=10>
+</form>
+</div>
+<!-- Main form end -->
+
+<!-- Bold editor popup -->
+<div id="bolded">
+<table width=1 border=0 cellpadding=0 cellspacing=0>
+<tr>
+<td width=1 bgcolor="#666666"><img src="dot_clear.gif" width="1" height="1" alt="" border="0"></td>
+<td width=20 bgcolor="#666666"><img src="dot_clear.gif" width="20" height="1" alt="" border="0"></td>
+<td width=350 bgcolor="#666666"><img src="dot_clear.gif" width="350" height="1" alt="" border="0"></td>
+<td width=10 bgcolor="#666666"><img src="dot_clear.gif" width="10" height="1" alt="" border="0"></td>
+<td width=1 bgcolor="#666666"><img src="dot_clear.gif" width="1" height="1" alt="" border="0"></td>
+</tr>
+<tr>
+<td bgcolor="#666666"><img src="dot_clear.gif" width="1" height="1" alt="" border="0"></td>
+<td bgcolor="#cccccc" align="center"><a href="javascript:clearall();domlay('formin',1)"><font face="verdana,helvetica,arial" size=-1><b>X</b></font></a></td>
+<td bgcolor="#999933" valign="top" align="center"><font face="verdana,helvetica,arial" size=-1 color="#ffffff">
+<b>Please enter your bold text</b></font></td>
+<td bgcolor="#999933"><img src="dot_clear.gif" width="1" height="1" alt="" border="0"></td>
+<td bgcolor="#666666"><img src="dot_clear.gif" width="1" height="1" alt="" border="0"></td>
+</tr>
+<tr>
+<td bgcolor="#666666"><img src="dot_clear.gif" width="1" height="1" alt="" border="0"></td>
+<td bgcolor="#ffcc66"><img src="dot_clear.gif" width="1" height="1" alt="" border="0"></td>
+<td bgcolor="#ffcc66" valign="top" align="center"><font face="verdana,helvetica,arial" size=-1>
+<br><form name="boldform">
+<textarea name="boldtext" cols=30 rows=8></textarea><br><br>
+<b>&gt;<a href="javascript:addbold()">Add to text!</a>&lt;</b>
+</form>
+</font></td>
+<td bgcolor="#ffcc66"><img src="dot_clear.gif" width="1" height="1" alt="" border="0"></td>
+<td bgcolor="#666666"><img src="dot_clear.gif" width="1" height="1" alt="" border="0"></td>
+</tr>
+<tr>
+<td colspan=5><img src="corner.gif" width="382" height="10" alt="bottom" border="0"></td>
+</tr>
+</table>
+</div>
+<!-- Bold editor popup end -->
+
+<!-- Italic editor popup -->
+<div id="italiced">
+<table width=1 border=0 cellpadding=0 cellspacing=0>
+<tr>
+<td width=1 bgcolor="#666666"><img src="dot_clear.gif" width="1" height="1" alt="" border="0"></td>
+<td width=20 bgcolor="#666666"><img src="dot_clear.gif" width="20" height="1" alt="" border="0"></td>
+<td width=350 bgcolor="#666666"><img src="dot_clear.gif" width="350" height="1" alt="" border="0"></td>
+<td width=10 bgcolor="#666666"><img src="dot_clear.gif" width="10" height="1" alt="" border="0"></td>
+<td width=1 bgcolor="#666666"><img src="dot_clear.gif" width="1" height="1" alt="" border="0"></td>
+</tr>
+<tr>
+<td bgcolor="#666666"><img src="dot_clear.gif" width="1" height="1" alt="" border="0"></td>
+<td bgcolor="#cccccc" align="center"><a href="javascript:clearall();domlay('formin',1)"><font face="verdana,helvetica,arial" size=-1><b>X</b></font></a></td>
+<td bgcolor="#999933" valign="top" align="center"><font face="verdana,helvetica,arial" size=-1 color="#ffffff">
+<b>Please enter your italic text</b></font></td>
+<td bgcolor="#999933"><img src="dot_clear.gif" width="1" height="1" alt="" border="0"></td>
+<td bgcolor="#666666"><img src="dot_clear.gif" width="1" height="1" alt="" border="0"></td>
+</tr>
+<tr>
+<td bgcolor="#666666"><img src="dot_clear.gif" width="1" height="1" alt="" border="0"></td>
+<td bgcolor="#ffcc66"><img src="dot_clear.gif" width="1" height="1" alt="" border="0"></td>
+<td bgcolor="#ffcc66" valign="top" align="center"><font face="verdana,helvetica,arial" size=-1>
+<br>
+<form name="italicform">
+<textarea name="italictext" cols=30 rows=8></textarea><br><br>
+<b>&gt;<a href="javascript:additalic()">Add to text!</a>&lt;</b>
+</form>
+</font></td>
+<td bgcolor="#ffcc66"><img src="dot_clear.gif" width="1" height="1" alt="" border="0"></td>
+<td bgcolor="#666666"><img src="dot_clear.gif" width="1" height="1" alt="" border="0"></td>
+</tr>
+<tr>
+<td colspan=5><img src="corner.gif" width="382" height="10" alt="bottom" border="0"></td>
+</tr>
+</table>
+</div>
+<!-- Italic editor popup end -->
+
+<!-- Font editor popup -->
+<div id="fonted">
+<table width=1 border=0 cellpadding=0 cellspacing=0>
+<tr>
+<td width=1 bgcolor="#666666"><img src="dot_clear.gif" width="1" height="1" alt="" border="0"></td>
+<td width=20 bgcolor="#666666"><img src="dot_clear.gif" width="20" height="1" alt="" border="0"></td>
+<td width=350 bgcolor="#666666"><img src="dot_clear.gif" width="350" height="1" alt="" border="0"></td>
+<td width=10 bgcolor="#666666"><img src="dot_clear.gif" width="10" height="1" alt="" border="0"></td>
+<td width=1 bgcolor="#666666"><img src="dot_clear.gif" width="1" height="1" alt="" border="0"></td>
+</tr>
+<tr>
+<td bgcolor="#666666"><img src="dot_clear.gif" width="1" height="1" alt="" border="0"></td>
+<td bgcolor="#cccccc" align="center"><a href="javascript:clearall();domlay('formin',1)"><font face="verdana,helvetica,arial" size=-1><b>X</b></font></a></td>
+<td bgcolor="#999933" valign="top" align="center">
+<font face="verdana,helvetica,arial" size=-1 color="#ffffff"><b>Please define your font</b></font></td>
+<td bgcolor="#999933"><img src="dot_clear.gif" width="1" height="1" alt="" border="0"></td>
+<td bgcolor="#666666"><img src="dot_clear.gif" width="1" height="1" alt="" border="0"></td>
+</tr>
+<tr>
+<td bgcolor="#666666"><img src="dot_clear.gif" width="1" height="1" alt="" border="0"></td>
+<td bgcolor="#ffcc66"><img src="dot_clear.gif" width="1" height="1" alt="" border="0"></td>
+<td bgcolor="#ffcc66" valign="top"><font face="verdana,helvetica,arial" size=-1>
+<form name="fontform">
+<dl compact>
+<dt>Font-Face:&nbsp;</dt>
+<dd><select name="fface">
+<option value="verdana,helvetica,arial">verdana,helvetica,arial</option>
+<option value="helvetica,arial" selected>helvetica,arial</option>
+<option value="arial">arial</option>
+<option value="helvetica">helvetica</option>
+<option value="verdana">verdana</option>
+<option value="times new roman">times new roman</option>
+</select><dd>
+<dt>Font-size:&nbsp;</dt>
+<dd><select name="size">
+<option value="-3">-3</option>
+<option value="-2">-2</option>
+<option value="-1" selected>-1</option>
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+</select></dd>
+<dt>Font-color:&nbsp;</dt>
+<dd><input type="text" name="color" size="7" maxlength="7"></dd>
+</dl>
+<p align="center"><b>&gt;<a href="javascript:addfont()">Add to text!</a>&lt;</b></p>
+Please make sure to close the font after typing the text!
+</form>
+</font></td>
+<td bgcolor="#ffcc66"><img src="dot_clear.gif" width="1" height="1" alt="" border="0"></td>
+<td bgcolor="#666666"><img src="dot_clear.gif" width="1" height="1" alt="" border="0"></td>
+</tr>
+<tr>
+<td colspan=5><img src="corner.gif" width="382" height="10" alt="bottom" border="0"></td>
+</tr>
+</table>
+</div>
+<!-- Font editor popup -->
+
+<!-- Link editor popup -->
+<div id="linked">
+<table width=1 border=0 cellpadding=0 cellspacing=0>
+<tr>
+<td width=1 bgcolor="#666666"><img src="dot_clear.gif" width="1" height="1" alt="" border="0"></td>
+<td width=20 bgcolor="#666666"><img src="dot_clear.gif" width="20" height="1" alt="" border="0"></td>
+<td width=350 bgcolor="#666666"><img src="dot_clear.gif" width="350" height="1" alt="" border="0"></td>
+<td width=10 bgcolor="#666666"><img src="dot_clear.gif" width="10" height="1" alt="" border="0"></td>
+<td width=1 bgcolor="#666666"><img src="dot_clear.gif" width="1" height="1" alt="" border="0"></td>
+</tr>
+<tr>
+<td bgcolor="#666666"><img src="dot_clear.gif" width="1" height="1" alt="" border="0"></td>
+<td bgcolor="#cccccc" align="center"><a href="javascript:clearall();domlay('formin',1)"><font face="verdana,helvetica,arial" size=-1><b>X</b></font></a></td>
+<td bgcolor="#999933" valign="top" align="center"><font face="verdana,helvetica,arial" size=-1 color="#ffffff">
+<b>Please enter your link data</b></font></td>
+<td bgcolor="#999933"><img src="dot_clear.gif" width="1" height="1" alt="" border="0"></td>
+<td bgcolor="#666666"><img src="dot_clear.gif" width="1" height="1" alt="" border="0"></td>
+</tr>
+<tr>
+<td bgcolor="#666666"><img src="dot_clear.gif" width="1" height="1" alt="" border="0"></td>
+<td bgcolor="#ffcc66"><img src="dot_clear.gif" width="1" height="1" alt="" border="0"></td>
+<td bgcolor="#ffcc66" valign="top"><font face="verdana,helvetica,arial" size=-1>
+<br>
+<form name="linkform">
+<dl compact>
+<dt>URL:&nbsp;</dt>
+<dd><input type="text" name="url" size="20"></dd>
+<dt>Text:</dt>
+<dd><input type="text" name="text" size="20"></dd>
+</dl>
+<p align="center"><b>&gt;<a href="javascript:addlink()">Add to text!</a>&lt;</b></p>
+</form>
+</font></td>
+<td bgcolor="#ffcc66"><img src="dot_clear.gif" width="1" height="1" alt="" border="0"></td>
+<td bgcolor="#666666"><img src="dot_clear.gif" width="1" height="1" alt="" border="0"></td>
+</tr>
+<tr>
+<td colspan=5><img src="corner.gif" width="382" height="10" alt="bottom" border="0"></td>
+</tr>
+</table>
+</div>
+<!-- Link editor popup end -->
+
+<!-- Load save editor popup -->
+<div id="saveed">
+<table width=1 border=0 cellpadding=0 cellspacing=0>
+<tr>
+<td width=1 bgcolor="#666666"><img src="dot_clear.gif" width="1" height="1" alt="" border="0"></td>
+<td width=20 bgcolor="#666666"><img src="dot_clear.gif" width="20" height="1" alt="" border="0"></td>
+<td width=350 bgcolor="#666666"><img src="dot_clear.gif" width="350" height="1" alt="" border="0"></td>
+<td width=10 bgcolor="#666666"><img src="dot_clear.gif" width="10" height="1" alt="" border="0"></td>
+<td width=1 bgcolor="#666666"><img src="dot_clear.gif" width="1" height="1" alt="" border="0"></td>
+</tr>
+<tr>
+<td bgcolor="#666666"><img src="dot_clear.gif" width="1" height="1" alt="" border="0"></td>
+<td bgcolor="#cccccc" align="center"><a href="javascript:clearall();domlay('formin',1)"><font face="verdana,helvetica,arial" size=-1><b>X</b></font></a></td>
+<td bgcolor="#999933" valign="top" align="center">
+<font face="verdana,helvetica,arial" size=-1 color="#ffffff"><b>Please select which safety copy to load/save:</b></font></td>
+<td bgcolor="#999933"><img src="dot_clear.gif" width="1" height="1" alt="" border="0"></td>
+<td bgcolor="#666666"><img src="dot_clear.gif" width="1" height="1" alt="" border="0"></td>
+</tr>
+<tr>
+<td bgcolor="#666666"><img src="dot_clear.gif" width="1" height="1" alt="" border="0"></td>
+<td bgcolor="#ffcc66"><img src="dot_clear.gif" width="1" height="1" alt="" border="0"></td>
+<td bgcolor="#ffcc66" valign="top"><font face="verdana,helvetica,arial" size=-1>
+<br>
+<form name="saveform">
+Safety copy:&nbsp;
+<select name="saveslot">
+<option value="1" selected>1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+</select>&nbsp;
+<a href="javascript:save()">Save the copy</a>&nbsp;<a href="javascript:load()">Load the copy</a>
+</form>
+</font></td>
+<td bgcolor="#ffcc66"><img src="dot_clear.gif" width="1" height="1" alt="" border="0"></td>
+<td bgcolor="#666666"><img src="dot_clear.gif" width="1" height="1" alt="" border="0"></td>
+</tr>
+<tr>
+<td colspan=5><img src="corner.gif" width="382" height="10" alt="bottom" border="0"></td>
+</tr>
+</table>
+</div>
+<!-- Load save editor popup end -->
+
+<!-- preview layer, content comes from javascript -->
+<div id="test"></div>
+
+<!-- help layer, content comes from javascript -->
+<div id="help"></div>
+
+</body>
+</html>

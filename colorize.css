@@ -1,0 +1,9 @@
+#formin{position:absolute;top:80px;left:40px;width:500px;height:200px;clip:rect(0,520,220,0);visibility:visible;}
+#bolded{position:absolute;top:50px;left:50px;width:400px;height:200px;clip:rect(0,400,250,0);visibility:hidden;}
+#test{position:absolute;top:50px;left:50px;width:500px;height:400px;clip:rect(0,500,400,0);visibility:hidden;}
+#linked{position:absolute;top:50px;left:50px;width:400px;height:200px;clip:rect(0,400,250,0);visibility:hidden;}
+#italiced{position:absolute;top:30px;left:130px;width:400px;height:200px;clip:rect(0,400,250,0);visibility:hidden}
+#fonted{position:absolute;top:60px;left:20px;width:400px;height:200px;clip:rect(0,400,250,0);visibility:hidden;}
+#saveed{position:absolute;top:60px;left:20px;width:400px;height:200px;clip:rect(0,400,250,0);visibility:hidden;}
+#help{position:absolute;top:20px;left:560px;width:180px;height:400px;clip:rect(0,400,400,0);visibility:hidden;}
+
